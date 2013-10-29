@@ -5,6 +5,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.1.rc3'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby'
+gem 'database_cleaner'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
@@ -24,6 +25,7 @@ end
  gem 'railties' 
  gem 'actionpack'
  gem 'activesupport'
+ gem 'factory_girl_rails', '4.2.1'
 
 
 group :doc do
