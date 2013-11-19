@@ -5,6 +5,9 @@ ruby '2.0.0'
 gem 'rails', '4.0.1.rc3'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby'
+gem 'faker', '1.1.2'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
 
 
 group :development, :test do
@@ -26,6 +29,7 @@ group :test do
  gem 'actionpack'
  gem 'activesupport'
  gem 'factory_girl_rails', '4.2.1'
+ gem 'database_cleaner'
 
  
 group :assets do
