@@ -64,6 +64,19 @@ shared_examples_for "all static pages" do
     end
   end
 
+  describe "follower/following counts" do
+        let(:other_user) { FactoryGirl.create(:user) }
+        before do
+          other_user.follow!(user)
+          visit root_path
+        end
+
+        it { should have_link("0 following", href: following_user_path(user)) }
+        it { should have_link("1 followers", href: followers_user_path(user)) }
+      end
+    end
+  end
+
   it "should have the right links on the layout" do
     visit root_path
     click_link "About"
